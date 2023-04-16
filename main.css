@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    text-align: center;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.cards .card {
+    width: calc(70% / 3);
+    height: 480px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin: 5px 8px;
+    padding: 20px;
+}
+
+.cards .card img {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.cardName {
+    margin: 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 50%;
+    margin: 10px auto 0;
+    padding: 6px;
+    background-color: #ccc;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+a:hover {
+    background-color: crimson;
+    color: #ccc;
+}
+
+.description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.title {
+    margin-top: 15px;
+}
+
+.paginations {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.paginations button {
+    margin: 10px 5px 0;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.paginations button.active {
+    background-color: crimson;
+    color: #eee;
+}
+
+.paginations button:hover {
+    background-color: crimson;
+    color: #eee;
+}
+
+@media (768px < width < 1200px) {
+    .cards .card {
+        width: 40%;
+    }
+}
+
+@media (width < 768px) {
+    .cards .card {
+        width: 100%;
+    }
+}
