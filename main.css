@@ -16,7 +16,7 @@
 
 .cards .card {
     width: calc(70% / 3);
-    height: 480px;
+    height: 500px;
     border: 2px solid #ccc;
     border-radius: 6px;
     -webkit-border-radius: 6px;

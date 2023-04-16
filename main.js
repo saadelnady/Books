@@ -18,7 +18,6 @@ btns.forEach((btn) => {
             if (this.readyState === 4 && this.status === 200) {
                 let myResponse = JSON.parse(myRequest.responseText);
                 let booksArray = myResponse.items;
-
                 let cards = document.querySelector(".cards");
                 let card = "";
                 booksArray.forEach((book) => {
